@@ -9,7 +9,7 @@ Não é mais um repositório de estudo. É minha preparação diária pra entrev
 ```
 daily-leetcode/
 ├── src/
-│   ├── dia-1/
+│   ├── day-one/
 │   │   ├── day-one.go
 │   │   ├── two-sum.go
 │   │   ├── valid-parentheses.go
@@ -20,7 +20,7 @@ daily-leetcode/
 └── README.md
 ```
 
-Cada dia vira um package novo dentro de `src/`. Dentro dele, os problemas são arquivos soltos — sem subpastas, sem firula.
+Cada dia vira um package novo dentro de `src/`. Dentro dele, os problemas são arquivos soltos, sem subpastas, sem firula.
 
 ## 📈 Progressão de Dificuldade
 

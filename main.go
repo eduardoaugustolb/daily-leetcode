@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	dayOne "github.com/eduardoaugustolb/daily-leetcode/src/dia-1"
+	dayOne "github.com/eduardoaugustolb/daily-leetcode/src/day-one"
 )
 
 func main() {
