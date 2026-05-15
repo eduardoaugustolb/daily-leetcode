@@ -1,4 +1,4 @@
-package dayOne
+package day1
 
 /*
 Best Time to Buy and Sell Stock

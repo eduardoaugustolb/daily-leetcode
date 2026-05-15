@@ -9,11 +9,16 @@ Não é mais um repositório de estudo. É minha preparação diária pra entrev
 ```
 daily-leetcode/
 ├── src/
-│   ├── day-one/
+│   ├── day-1/
 │   │   ├── day-one.go
 │   │   ├── two-sum.go
 │   │   ├── valid-parentheses.go
 │   │   └── best-time-to-buy.go
+│   ├── day-2/
+│   │   ├── day-two.go
+│   │   ├── contains-duplicate.go
+│   │   ├── max-sub-array.go
+│   │   └── merge-two-sorted-list.go
 │   └── ...
 ├── main.go
 ├── go.mod
@@ -38,10 +43,16 @@ A ideia é simples: a cada 2 dias o bicho pega mais.
 ### 🟢 Easy
 
 | # | Problema | Solução | Complexidade |
-|---|----------|---------|--------------|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](./src/dia-1/two-sum.go) | O(n) / O(n) |
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Go](./src/dia-1/valid-parentheses.go) | O(n) / O(n) |
-| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Go](./src/dia-1/best-time-to-buy.go) | O(n) / O(1) |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](./src/day-1/two-sum.go) | O(n) / O(n) |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Go](./src/day-1/valid-parentheses.go) | O(n) / O(n) |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Go](./src/day-1/best-time-to-buy.go) | O(n) / O(1) |
+| 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | [Go](./src/day-2/contains-duplicate.go) | O(n) / O(n) |
+| 21 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Go](./src/day-2/merge-two-sorted-list.go) | O(n + m) / O(n + m) |
+
+### 🟡 Medium
+
+| # | Problema | Solução | Complexidade |
+| 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Go](./src/day-2/max-sub-array.go) | O(n) / O(1) |
 
 ## 🧠 Padrões & Técnicas
 
@@ -52,6 +63,9 @@ Reconhecer o padrão é metade da solução. A outra metade é implementar sem e
 | Hash Map | Two Sum |
 | Stack | Valid Parentheses |
 | Sliding Window / Greedy | Best Time to Buy and Sell Stock |
+| Two Pointers | Merge Two Sorted Lists |
+| Kadane's Algorithm | Maximum Subarray |
+| Hash Set | Contains Duplicate |
 
 ## 🔑 O que busco em cada solução
 

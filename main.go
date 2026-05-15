@@ -3,10 +3,14 @@ package main
 import (
 	"fmt"
 
-	dayOne "github.com/eduardoaugustolb/daily-leetcode/src/day-one"
+	day1 "github.com/eduardoaugustolb/daily-leetcode/src/day-1"
+	day2 "github.com/eduardoaugustolb/daily-leetcode/src/day-2"
 )
 
 func main() {
 	fmt.Println("# Day 1")
-	dayOne.DayOne()
+	day1.DayOne()
+
+	fmt.Println("# Day 2")
+	day2.DayTwo()
 }
