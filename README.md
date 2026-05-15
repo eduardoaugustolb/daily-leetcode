@@ -43,6 +43,7 @@ A ideia é simples: a cada 2 dias o bicho pega mais.
 ### 🟢 Easy
 
 | # | Problema | Solução | Complexidade |
+|---|----------|---------|--------------|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Go](./src/day-1/two-sum.go) | O(n) / O(n) |
 | 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Go](./src/day-1/valid-parentheses.go) | O(n) / O(n) |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Go](./src/day-1/best-time-to-buy.go) | O(n) / O(1) |
@@ -52,6 +53,7 @@ A ideia é simples: a cada 2 dias o bicho pega mais.
 ### 🟡 Medium
 
 | # | Problema | Solução | Complexidade |
+|---|----------|---------|--------------|
 | 53 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Go](./src/day-2/max-sub-array.go) | O(n) / O(1) |
 
 ## 🧠 Padrões & Técnicas
