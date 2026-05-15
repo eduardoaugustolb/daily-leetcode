@@ -11,6 +11,16 @@ Constraints: 0 <= N <= 50, valores entre -100 e 100
 
 package day2
 
+import "fmt"
+
+func RunMergeTwoSortedList() {
+	list1 := []int{1, 2, 4}
+	list2 := []int{1, 3, 4}
+	fmt.Println("Fazer merge e sort de duas listas")
+	fmt.Println("Antes:", list1, list2)
+	fmt.Println("Depois", mergeTwoSortedList(list1, list2))
+}
+
 func mergeTwoSortedList(list1 []int, list2 []int) []int {
 	i := 0
 	j := 0

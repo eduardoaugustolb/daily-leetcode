@@ -1,5 +1,7 @@
 package day2
 
+import "fmt"
+
 /*
 🧩 Desafio 2: Maximum Subarray
 Problema: Dado um array de inteiros, encontre o subarray contíguo (sequência de elementos adjacentes) que tem a maior soma e retorne essa soma.
@@ -16,6 +18,11 @@ Array de inteiros (pode ter negativos)
 1 <= len(nums) <= 10⁵
 Retorna um int
 */
+
+func RunMaxSubArray() {
+	numsList := []int{-2, 1, -3, 4, -1, 2, 1, -5, 4}
+	fmt.Println("Maior soma do array:", numsList, maxSubArray(numsList))
+}
 
 func maxSubArray(nums []int) int {
 	currentSum := nums[0]

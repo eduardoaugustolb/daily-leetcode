@@ -1,5 +1,7 @@
 package day1
 
+import "fmt"
+
 /*
  Two Sum
  Dado um array de inteiros nums e um inteiro target, retorne os índices dos dois números que somam ao target.
@@ -17,6 +19,12 @@ package day1
 
  Output: [1,2]
 */
+
+func RunTwoSum() {
+	nums := []int{3, 2, 4}
+	target := 6
+	fmt.Println("Indíces da soma:", twoSum(nums, target))
+}
 
 func twoSum(nums []int, target int) []int {
 	// num: idx

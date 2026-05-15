@@ -10,12 +10,10 @@ Não é mais um repositório de estudo. É minha preparação diária pra entrev
 daily-leetcode/
 ├── src/
 │   ├── day-1/
-│   │   ├── day-one.go
 │   │   ├── two-sum.go
 │   │   ├── valid-parentheses.go
 │   │   └── best-time-to-buy.go
 │   ├── day-2/
-│   │   ├── day-two.go
 │   │   ├── contains-duplicate.go
 │   │   ├── max-sub-array.go
 │   │   └── merge-two-sorted-list.go
@@ -25,7 +23,7 @@ daily-leetcode/
 └── README.md
 ```
 
-Cada dia vira um package novo dentro de `src/`. Dentro dele, os problemas são arquivos soltos, sem subpastas, sem firula.
+Cada dia vira um package novo dentro de `src/`. Dentro dele, os problemas são arquivos soltos, sem subpastas, sem firula. Não existem arquivos agregadores — cada desafio é auto-suficiente.
 
 ## 📈 Progressão de Dificuldade
 
@@ -37,6 +35,34 @@ A ideia é simples: a cada 2 dias o bicho pega mais.
 | 3–4  | 🟡 Medium |
 | 5–6  | 🔴 Hard |
 | 7+   | 🔴 Hard + variações |
+
+## 📐 Estrutura de um Desafio
+
+Cada arquivo de desafio segue o mesmo padrão:
+
+```go
+package dayN
+
+import "fmt"
+
+// RunNomeDoProblema executa os casos de teste e exibe os resultados.
+func RunNomeDoProblema() {
+    input := []int{3, 2, 4}
+    fmt.Println("Resultado:", nomeDoProblema(input))
+}
+
+// nomeDoProblema contém apenas a lógica pura do algoritmo.
+func nomeDoProblema(input []int) int {
+    // implementação
+}
+```
+
+| Camada | Função | Responsabilidade |
+|--------|--------|------------------|
+| Pública | `RunNome()` | Casos de teste, prints, execução |
+| Privada | `nome()` | Lógica do algoritmo apenas |
+
+O `main.go` importa os packages e chama cada `Run*()` diretamente — sem agregadores intermediários.
 
 ## ✅ Problemas Resolvidos
 
@@ -82,6 +108,19 @@ Reconhecer o padrão é metade da solução. A outra metade é implementar sem e
 git clone https://github.com/eduardoaugustolb/daily-leetcode.git
 cd daily-leetcode
 go run main.go
+```
+
+Cada `Run*()` é chamado sequencialmente no `main.go`:
+
+```go
+func main() {
+    day1.RunTwoSum()
+    day1.RunValidParentheses()
+    day1.RunBestTimeToBuy()
+    day2.RunMergeTwoSortedList()
+    day2.RunMaxSubArray()
+    day2.RunContainsDuplicate()
+}
 ```
 
 ## 👤 Autor

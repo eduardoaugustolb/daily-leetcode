@@ -1,5 +1,7 @@
 package day1
 
+import "fmt"
+
 /*
 Valid Parentheses
 Dado uma string s contendo apenas os caracteres '(', ')', '{', '}', '[' e ']', determine se a string é válida.
@@ -14,6 +16,10 @@ Output: true
 Input:  "(]"
 Output: false
 */
+
+func RunValidParentheses() {
+	fmt.Println("O 'parenteses' é válido?", validateParentheses("()[]{}"))
+}
 
 var opens = map[rune]bool{
 	'(': true,

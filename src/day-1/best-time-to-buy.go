@@ -1,5 +1,7 @@
 package day1
 
+import "fmt"
+
 /*
 Best Time to Buy and Sell Stock
 Dado um array prices onde prices[i] é o preço de uma ação no dia i, retorne o lucro máximo que você pode obter comprando em um dia e vendendo em um dia futuro. Se não for possível lucrar, retorne 0.
@@ -17,6 +19,12 @@ Output: 0
 // preços só caem
 // nenhuma transação
 */
+
+func RunBestTimeToBuy() {
+	fmt.Println("O melhor lucro é:",
+		bestTimeToBuy([]int{7, 1, 5, 3, 6, 4}),
+	)
+}
 
 func bestTimeToBuy(prices []int) int {
 	lowestPrice := prices[0]
